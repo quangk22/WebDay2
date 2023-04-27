@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Day2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Day 2</title>
+</head>
+<body>
+   <div class="container">
+        <div class="icon_soclai">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <i class="fa-brands fa-discord"></i>
+        </div>
+        <img src="Quang.png" alt="">
+        <h1>Trịnh Ngọc Quang</h1>
+        <p>22CDTH11</p>
+        <p>Ngành : Tin học ứng dụng</p>
+        <p>Gmail: tnquang542004@gmail.com</p>
+        <div class="btn-container">
+            <button>Liên hệ</button>
+            <button>Kết bạn</button>
+        </div>
+   </div>
+   <script>
+    const imgB = document.querySelector('.container img')
+    
+    imgB.addEventListener("click",function(){
+        this.classList.toggle("active")
+    })
+   </script>
+</body>
+</html>

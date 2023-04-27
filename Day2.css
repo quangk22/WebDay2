@@ -1,0 +1,108 @@
+:root {
+    --bg1: #9b59b6;
+    --bg2: #3498db;
+    --bg3: #D7E1eC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(#c6ffdd, #fbd786, #f7797d);
+}
+
+.container{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(var(--bg1), var(--bg2));
+    transition: 0.4s;
+    overflow: hidden;
+    position: relative;
+}
+.container:hover {
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    background: linear-gradient(var(--bg1), var(--bg2));
+}
+.container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container img.active{
+    width: 350px;
+    height: 450px;
+    margin: 0;
+    border: 5px solid #ffffff;
+    border-radius: 15px;
+}
+
+.container h1 {
+    color: #fffffF;
+
+}
+.container p{
+    color: #fffffF;
+    margin: 0 30px 12px;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 12px; 
+   
+}
+.btn-container button{
+    height: 35px;
+    width: 150px;
+    font-size: 20px;
+    border: none;
+    margin-right: 12px;
+    border-radius: 5px;
+    color: #333333;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ee7ee3;
+}
+.btn-container button:hover{
+    transform: scale(0.95);
+}
+.icon_soclai{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-60px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    top: 12px
+}
+.container:hover .icon_soclai{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.icon_soclai i{
+    padding: 12px;
+    color: var(--bg1);
+    background: #FFF;
+    border-radius:  50%;
+    margin: 5px 0 0 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.icon_soclai i:hover{
+    transform: scale(0.95);
+}
